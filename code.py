@@ -3,6 +3,12 @@ import cv2
 import copy
 
 def rescaleFrame(frame, scale=0.75):
+    """Reduces the video frame size
+
+    :param frame: size of the frame shape
+    :param scale: rescale size of the frame
+    :return: rescaled frame
+    """
     width = int(frame.shape[1] * scale)
     height = int(frame.shape[0] * scale)
 
