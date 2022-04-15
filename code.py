@@ -11,7 +11,7 @@ def rescaleFrame(frame, scale=0.75):
     return cv2.resize(frame, dimensions, interpolation=cv2.INTER_AREA)
 
 def main():
-    inp = "videos/Test2-3.mp4"
+    inp = input("What video would you like to process? (Please add videos/ in front of the file name please)")
     cap = cv2.VideoCapture(inp)
     fgbg = cv2.createBackgroundSubtractorMOG2()
     first_iteration_indicator = 1
